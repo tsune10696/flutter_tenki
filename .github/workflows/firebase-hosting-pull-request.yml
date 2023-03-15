@@ -22,18 +22,10 @@ jobs:
       - name: Download Flutter packages
         run: flutter pub get
 
-      # ls
-      - name: ls
-        run: ls /home/runner/work/flutter_tenki/flutter_tenki/flutter/dev/docs/firebase.json
-
-      # pwd
-      - name: pwd
-        run: pwd
-
       - run: flutter build web
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          entryPoint: '/home/runner/work/flutter_tenki/flutter_tenki/flutter/dev/docs/'    
+          entryPoint: '/home/runner/work/flutter_tenki/flutter_tenki/'     
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TENKI_APP_3DCE0 }}'
           projectId: tenki-app-3dce0
