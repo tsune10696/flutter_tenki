@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "home/runner/work/flutter_tenki/flutter_tenki/web",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
