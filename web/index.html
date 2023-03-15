@@ -1,59 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+  <body>
+    <header id="header" class="wrapper">
+      <h1 class="site-title"><a href="index.html"><img src="img/logo.svg" alt="Profile"></a></h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#bicycle">Bicycle</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <main>
+      <div id="mainvisual">
+        <img src="img/mainvisual.jpg" alt="テキストテキストテキスト">
+      </div>
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+      <section id="about" class="wrapper">
+        <h2 class="section-title">About</h2>
+        <div class="content">
+          <img src="img/about.jpg" alt="テキストテキストテキスト">
+          <div class="text">
+            <h3 class="content-title">KAKERU MIYAICHI</h3>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキスト<br>
+              テキストテキストテキストテキストテキストテキストテキスト<br>
+              テキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </section>
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+      <section id="bicycle" class="wrapper">
+        <h2 class="section-title">Bicycle</h2>
+        <ul>
+          <li>
+            <img src="img/bicycle1.jpg" alt="テキストテキストテキスト">
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+          <li>
+            <img src="img/bicycle2.jpg" alt="テキストテキストテキスト">
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+          <li>
+            <img src="img/bicycle3.jpg" alt="テキストテキストテキスト">
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutter_tenki">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <footer id="footer">
+      <p>&copy; 2020 Profile</p>
+    </footer>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  </body>
 
-  <title>flutter_tenki</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-</head>
-<body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
-    });
-  </script>
-</body>
 </html>
