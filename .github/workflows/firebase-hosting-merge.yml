@@ -26,7 +26,7 @@ jobs:
 
       # ls
       - name: ls
-        run: ls
+        run: ls /home/runner/work/flutter_tenki/flutter_tenki/flutter/dev/docs/firebase.json
 
       # pwd
       - name: pwd
