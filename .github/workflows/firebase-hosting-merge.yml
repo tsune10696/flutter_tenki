@@ -35,7 +35,7 @@ jobs:
       - run: flutter build web
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          entryPoint: '/home/runner/work/flutter_tenki/flutter_tenki/flutter/dev/docs/firebase.json'       
+          entryPoint: '/home/runner/work/flutter_tenki/flutter_tenki/flutter/dev/docs/'       
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TENKI_APP_3DCE0 }}'
           channelId: live
