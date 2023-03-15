@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tenki.flutter_tenki">
-    <application
-        android:label="flutter_tenki"
+    package="com.tsune10696.tenkiApp.tenki_app">
+   <application
+        android:label="tenki_app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
