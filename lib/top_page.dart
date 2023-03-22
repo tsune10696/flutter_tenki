@@ -1,9 +1,10 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:tenki_app/weather.dart';
-import 'package:tenki_app/zip_code.dart'; //他のファイルで書いてあるものを読み込む
+import 'package:flutter/foundation.dart'; //foundation.dartを使用
+import 'package:flutter/material.dart'; //material.dartを使用
+import 'package:intl/intl.dart'; //intl.dartを使用
+import 'package:tenki_app/weather.dart'; //weather.dartをimport
+import 'package:tenki_app/zip_code.dart'; //zip_code.dartをimport
 
+//TopPageの構成を記述するクラス
 class TopPage extends StatefulWidget {
   const TopPage({Key? key}) : super(key: key);
 
@@ -11,15 +12,18 @@ class TopPage extends StatefulWidget {
   State<TopPage> createState() => _TopPageState();
 }
 
+//_TopPageStateの構成を記述するクラス
 class _TopPageState extends State<TopPage> {
+
+  //各変数を定義
   Weather currentWeather = Weather(description: '', temp: 0, tempMax: 0, tempMin: 0);
   String address = '―';
   String? errorMessage;
   List<Weather> hourlyWeather = [];
   List<Weather> dailyWeather = [];
-
   List<String> weekDay = ['月','火','水','木','金','土','日'];
 
+  //UIを記載する箇所
   @override
   Widget build(BuildContext context) {
     return Scaffold(
