@@ -2,6 +2,7 @@ import 'dart:convert'; //dart:convertを使用
 import 'package:http/http.dart'; //package:http/http.dartを使用
 import 'package:tenki_app/zip_code.dart'; //zip_code.dartをimport
 
+
 //天気関係の情報をまとめているクラス
 class Weather {
   //変数の定義(Null Safety対応で?を付けている)
